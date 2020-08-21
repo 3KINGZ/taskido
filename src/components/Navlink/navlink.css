@@ -1,0 +1,12 @@
+.nav-link {
+  margin-bottom: 2%;
+  opacity: 0.5;
+}
+
+.nav-link > a > img {
+  width: 18px;
+}
+
+.nav-link > a > span {
+  vertical-align: 3px;
+}

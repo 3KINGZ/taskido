@@ -1,0 +1,28 @@
+.result-container {
+  margin-top: 4%;
+}
+
+.result-data {
+  margin-bottom: 2%;
+}
+
+.membership-options {
+  margin-top: 4%;
+  padding: 30px 5px;
+  border-top: 1px solid rgb(23, 124, 240);
+  border-bottom: 1px solid rgb(23, 124, 240);
+}
+
+table {
+  border: none;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+.blue {
+  color: rgb(23, 124, 240);
+}

@@ -1,13 +1,193 @@
-body {
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: sans-serif;
+  background-color: #eaecf3;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 270px 1fr;
+}
+
+.main-content > div {
+  border-left: 1px solid rgb(175, 172, 172);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main-content > div:nth-of-type(2) {
+  overflow: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  font-size: 1.6em;
+  opacity: 0.8;
+  margin-bottom: 10%;
+}
+
+.nav-links2 {
+  margin-top: 10%;
+  color: white;
+}
+
+.nav-links2 > div {
+  margin-bottom: 2%;
+  background-color: rgb(23, 124, 240);
+  padding: 3px 5px;
+}
+
+.nav-links2 > div > a > img {
+  width: 18px;
+  vertical-align: -3px;
+}
+
+.main-container {
+  padding-top: 3%;
+}
+
+.sitemap {
+  margin-top: 3%;
+}
+
+.notice {
+  margin-top: 4%;
+  background-color: rgb(23, 124, 240);
+  width: 500px;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.notice > ul {
+  margin-left: 5%;
+}
+
+.notice > button {
+  margin-top: 1.5%;
+  padding: 3px 5px;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+}
+
+.membership {
+  margin-top: 4%;
+  background-color: rgb(23, 124, 240);
+  width: 500px;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.membership > div > select {
+  width: 50%;
+  height: 30px;
+  margin-bottom: 2%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.btn {
+  margin-top: 1.5%;
+  padding: 3px 5px;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+}
+
+.error {
+  background-color: rgb(212, 84, 84);
+  color: whitesmoke;
+  padding: 10px;
+}
+
+.error > ul {
+  margin-left: 4%;
+}
+
+.blue {
+  color: rgb(23, 124, 240);
+}
+
+.type-of-membership {
+  margin-top: 4%;
+  width: 500px;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  color: inherit;
+}
+
+.select-group {
+  margin-top: 5%;
+}
+
+.select-group > select {
+  width: 30%;
+  height: 25px;
+  margin-right: 3%;
+  border-radius: 2px;
+  border: 1px solid rgb(209, 206, 206);
+  outline: none;
+}
+
+.toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  @keyframes slide-open {
+    100% {
+      left: 0;
+    }
+  }
+  .toggle {
+    display: block;
+  }
+
+  @keyframes slide-out {
+    100% {
+      left: -100%;
+    }
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar {
+    height: 100vh;
+    padding-left: 20px;
+    opacity: 10;
+    width: 250px;
+    position: fixed;
+    z-index: 200;
+    left: 0;
+    background: rgb(154, 175, 199);
+    animation: slide-open 0.2s forwards;
+  }
+  .hide {
+    height: 100vh;
+    padding-left: 20px;
+    opacity: 0.3;
+    width: 250px;
+    position: fixed;
+    z-index: 200;
+    left: -100%;
+    animation: slide-out 0.2s forwards;
+  }
+  .main-container > div {
+    margin: auto;
+  }
 }

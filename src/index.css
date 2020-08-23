@@ -174,7 +174,7 @@ a {
     position: fixed;
     z-index: 200;
     left: 0;
-    background: rgb(154, 175, 199);
+    background: rgb(196, 216, 240);
     animation: slide-open 0.2s forwards;
   }
   .hide {
@@ -189,5 +189,13 @@ a {
   }
   .main-container > div {
     margin: auto;
+  }
+  .main-container > div > div {
+    margin: auto;
+    width: 100%;
+  }
+  .sitemap-c {
+    margin-top: 1%;
+    margin-bottom: 2%;
   }
 }

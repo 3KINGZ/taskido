@@ -21,7 +21,8 @@ function IIRSM() {
   const [nextStage, setNextStage] = useState(false);
   const [showInput, setShowInput] = useState(false);
   const [showSideBar, setShowSideBar] = useState(false);
-  const handleShowInput = () => setShowInput(false);
+
+  const handleShowInput = () => setShowInput(true);
 
   const setTOM = (e, value) => {
     const membership = { ...typeOfMemebership };
@@ -55,6 +56,7 @@ function IIRSM() {
     setShowSideBar(!showSideBar);
     console.log(showSideBar);
   };
+
   return (
     <div className="main-content">
       <OnSideBar.Provider value={onHandleSidebar}>
@@ -62,14 +64,16 @@ function IIRSM() {
       </OnSideBar.Provider>
       <div className="main-container">
         <OnSideBar.Provider value={onHandleSidebar}>
-          <ToggleSidebar />
+          <ToggleSidebar icon="menu" />
         </OnSideBar.Provider>
         <img src={logo} alt="logo" />
         <div className="sitemap">
-          <span>YOU ARE HERE: </span>
-          <span style={{ opacity: "0.5" }}>
-            Home {">>"} Membership {">>"} Join
-          </span>
+          <p className="sitemap-c">
+            <span>YOU ARE HERE: </span>
+            <span style={{ opacity: "0.5" }}>
+              Home {">>"} Membership {">>"} Join
+            </span>
+          </p>
           {notice ? <Notice handleMembership={showMembershipCont} /> : null}
           {showMembership ? (
             <Membership

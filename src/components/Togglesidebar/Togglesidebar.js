@@ -3,12 +3,12 @@ import { Icon } from "@blueprintjs/core";
 import "./Togglesidebar.css";
 import { OnSideBar } from "../../index";
 
-const ToggleSideBar = () => {
+const ToggleSideBar = ({ icon }) => {
   const onHandleSideBar = useContext(OnSideBar);
 
   return (
     <button onClick={onHandleSideBar} className="toggle">
-      <Icon icon="menu" />
+      <Icon icon={icon} />
     </button>
   );
 };

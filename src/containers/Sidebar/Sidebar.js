@@ -6,7 +6,7 @@ import ToggleSideBar from "../../components/Togglesidebar/Togglesidebar";
 const SideBar = ({ sideBarState }) => {
   return (
     <div className={sideBarState ? "sidebar" : "hide"}>
-      <ToggleSideBar />
+      <ToggleSideBar icon="menu-closed" />
       <div className="logo">
         <h3>iirsm</h3>
       </div>

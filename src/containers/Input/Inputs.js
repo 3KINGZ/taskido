@@ -59,7 +59,7 @@ function Inputs() {
   };
 
   return (
-    <div>
+    <div className="inputts">
       <div className="section">
         <h3>Personal Details</h3>
         <div className="main-inputs-container">

@@ -54,7 +54,6 @@ function IIRSM() {
   };
   const onHandleSidebar = () => {
     setShowSideBar(!showSideBar);
-    console.log(showSideBar);
   };
 
   return (

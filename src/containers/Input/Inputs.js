@@ -339,7 +339,11 @@ function Inputs() {
           </select>
         </div>
       </div>
-      <button onClick={logAll} className="btn">
+      <button
+        onClick={logAll}
+        className="btn"
+        style={{ backgroundColor: "rgb(23, 124, 240)", color: "white" }}
+      >
         SUBMIT
       </button>
     </div>
